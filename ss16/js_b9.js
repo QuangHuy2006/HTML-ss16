@@ -1,18 +1,15 @@
-let str = prompt("nhap vao chuoi");
-let cnt=0;
-let str2 = str[0];
-let str3 = str2.toUpperCase();
-let newstr = str.replace(str[0],str3);
-document.write(newstr);
-for(let i = 0; i< str.length; i++){
+let str = prompt("nhap chuoi bat ky:");
+let str5 = str.trim();
+let str2="";
+let str3 = str5[0];
+let str4 = str3.toUpperCase();
+str = str.replace(str[0],str4);
+for(let i=0; i< str.length; i++){
     if(str[i] === ' '){
-        cnt=i;
-document.write("dau cach o vi tri index: " + cnt                                                            );
-        let newstr2 = newstr.charAt(cnt+1);
-        let str4 = newstr2.toUpperCase;
-        let newstr3 = newstr.replace(newstr[cnt+1],newstr3);
+        document.write("space : " + i);
+        str= str.replaceAll(str[i+1], str[i+1].toUpperCase());
     }
 }
-for(let i = 0;i < str.length; i++){
-    document.write(newstr3[i]); 
+for(let i=0; i< 1; i++){
+document.write(str);
 }
