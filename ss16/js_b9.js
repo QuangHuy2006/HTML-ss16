@@ -6,8 +6,7 @@ let str4 = str3.toUpperCase();
 str = str.replace(str[0],str4);
 for(let i=0; i< str.length; i++){
     if(str[i] === ' '){
-        document.write("space : " + i);
-        str= str.replaceAll(str[i+1], str[i+1].toUpperCase());
+        str= str.replace(str[i+1], str[i+1].toUpperCase());
     }
 }
 for(let i=0; i< 1; i++){
